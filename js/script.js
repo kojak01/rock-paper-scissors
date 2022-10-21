@@ -1,7 +1,15 @@
-let randomFraction = Math.floor(Math.random() * 3 + 1);
-printMessage('wylosowany ułamek to: ' + randomFraction);
-let computerMove = 'rock';
-printMessage('I play ' + computerMove + '! If your move is paper, you are win!');
+let randomNumber = Math.floor(Math.random() * 3 + 1);
+printMessage('random number ' + randomNumber);
+let computerMove = 'unknown movement';
+if(randomNumber == 1) {
+    computerMove = 'rock';
+} else if(randomNumber == 2) {
+    computerMove = 'paper';
+} else if(randomNumber == 3) {
+    computerMove = 'scissors';
+}
 
-let playerMove = 'paper';
-printMessage('I play ' + computerMove + '! If your move is ' + playerMove +', you are win!');
+console.log('Computer move: ' + computerMove);
+
+let playerMove = 'unknown movement';
+
