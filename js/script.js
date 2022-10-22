@@ -12,7 +12,6 @@ function getMoveName(MoveId){
 
 // Computer Move
 let randomNumber = Math.floor(Math.random() * 3 + 1);
-printMessage('random number ' + randomNumber);
 let computerMove = getMoveName(randomNumber);
 /*if(randomNumber == 1) {
     computerMove = 'rock';
@@ -39,3 +38,17 @@ let playerMove = getMoveName(playerInput);
 */
 console.log('Player move: ' + playerMove);
 
+function displayResult(Computer, User){
+} if ((computerMove == 'rock' && playerMove == 'paper') ||
+(computerMove == 'paper' && playerMove == 'scissors') ||
+(computerMove == 'scissors' && playerMove == 'rock')) {
+    console.log('you win!');
+} else if (computerMove == playerMove) {
+    console.log('draw!');
+} else if (playerMove == 'unknow movemenet'){
+    console.log('enter a number from 1 to 3');
+} else {
+    console.log('you lose!');
+}
+ 
+displayResult(computerMove, playerMove);
