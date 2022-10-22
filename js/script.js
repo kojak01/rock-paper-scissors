@@ -44,15 +44,25 @@ function playGame(playerInput){
     } if ((computerMove == 'rock' && playerMove == 'paper') ||
     (computerMove == 'paper' && playerMove == 'scissors') ||
     (computerMove == 'scissors' && playerMove == 'rock')) {
-        console.log('you win!');
+        printMessage('you win!');
     } else if (computerMove == playerMove) {
-        console.log('draw!');
+        printMessage('draw!');
     } else if (playerMove == 'unknow movemenet'){
-        console.log('enter a number from 1 to 3');
+        printMessage('enter a number from 1 to 3');
     } else {
-        console.log('you lose!');
+        printMessage('you lose!');
     }
     
     displayResult(computerMove, playerMove);
 }
-playGame(2);
+
+document.getElementById('play-rock').addEventListener('click', function(){
+    playGame(1);
+  });
+document.getElementById('play-paper').addEventListener('click', function(){
+    playGame(2);
+})
+document.getElementById('play-scissors').addEventListener('click', function(){
+    playGame(3);
+}
+)
