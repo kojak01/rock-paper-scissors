@@ -44,13 +44,13 @@ function playGame(playerInput){
     } if ((computerMove == 'rock' && playerMove == 'paper') ||
     (computerMove == 'paper' && playerMove == 'scissors') ||
     (computerMove == 'scissors' && playerMove == 'rock')) {
-        printMessage('you win!');
+        printMessage('You Win!');
     } else if (computerMove == playerMove) {
-        printMessage('draw!');
+        printMessage('Draw!');
     } else if (playerMove == 'unknow movemenet'){
         printMessage('enter a number from 1 to 3');
     } else {
-        printMessage('you lose!');
+        printMessage('You Lose!');
     }
     
     displayResult(computerMove, playerMove);

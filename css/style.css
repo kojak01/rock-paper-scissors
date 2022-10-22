@@ -1,0 +1,15 @@
+button {
+    padding: 10px;
+    background: rgb(143, 143, 223);
+}
+#buttons {
+    text-align: center;
+}
+#messages {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
