@@ -1,6 +1,6 @@
-function playGame(playerInput){
+const playGame = function(playerInput){
     clearMessages(); //<-- removes all messages
-    function getMoveName(MoveId){
+    const getMoveName = function(MoveId){
         if (MoveId == 1) {
             return 'rock';
         } else if (MoveId == 2) {
@@ -13,8 +13,8 @@ function playGame(playerInput){
     }
 
     // Computer Move
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
-    let computerMove = getMoveName(randomNumber);
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
+    const computerMove = getMoveName(randomNumber);
     /*if(randomNumber == 1) {
         computerMove = 'rock';
     } else if(randomNumber == 2) {
@@ -27,7 +27,7 @@ function playGame(playerInput){
     /*let playerInput = prompt('Choose your move! 1: stone, 2: paper, 3: scissors.')
     console.log('player choose: ' + playerInput);*/
 
-    let playerMove = getMoveName(playerInput);
+    const playerMove = getMoveName(playerInput);
     /*if(playerInput == 1) {
         playerMove = 'rock';
     } else if (playerInput == 2) {
@@ -40,8 +40,9 @@ function playGame(playerInput){
     */
     console.log('Player move: ' + playerMove);
 
-    function displayResult(Computer, User){
-    } if ((computerMove == 'rock' && playerMove == 'paper') ||
+    const displayResult = function(Computer, User){
+        console.log('displayResult: work')
+    if ((computerMove == 'rock' && playerMove == 'paper') ||
     (computerMove == 'paper' && playerMove == 'scissors') ||
     (computerMove == 'scissors' && playerMove == 'rock')) {
         printMessage('You Win!');
@@ -52,7 +53,7 @@ function playGame(playerInput){
     } else {
         printMessage('You Lose!');
     }
-    
+    }
     displayResult(computerMove, playerMove);
 }
 
