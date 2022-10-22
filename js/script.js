@@ -1,5 +1,5 @@
 function playGame(playerInput){
-    clearMessages();
+    clearMessages(); //<-- removes all messages
     function getMoveName(MoveId){
         if (MoveId == 1) {
             return 'rock';
